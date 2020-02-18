@@ -1,2 +1,2 @@
-# WxScripts
+# JWxScripts
 My script collection
