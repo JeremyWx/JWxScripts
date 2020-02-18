@@ -3,14 +3,14 @@ $DBDrives = $null  # Number not in quotes
 # Physical disk size to target (Get by using Get-Disk and looking for the size property)
 $DiskSize = $null  # Number not in quotes - e.g. Get-Disk -Number 4 | ft AllocatedSize
 # Mount point directories used by the DAG - Make sure to add the trailing backslash \
-$ExDB = "C:\ExchangeDatabases\"  # String in quotes
-$ExVol = "C:\ExchangeVolumes\"  # String in quotes
+$ExDB = $null  # String in quotes
+$ExVol = $null  # String in quotes
 # Regional Database Prefix
-$DBPrefix = "XX"  # String in quotes
+$DBPrefix = $null  # String in quotes
 # Number of Databases
-$NumDBs = 48  # Number not in quotes
+$NumDBs = $null  # Number not in quotes
 # DBs per Volume
-$DBsPerVol = 4  # Number not in quotes
+$DBsPerVol = $null  # Number not in quotes
 
 # Functions
 function SanityCheck() {
