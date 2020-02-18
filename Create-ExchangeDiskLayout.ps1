@@ -88,7 +88,6 @@ function CreateVolMP() {
 }
 
 function PrepareDrive($DiskNumber,$VolMountNumber) {
-    Write-Host "Preparing Drives..."
     try {
         if ( $(Get-Disk -Number $DiskNumber).PartitionStyle -notlike "GPT") {
             Write-Host "Initializing Disk $DiskNumber"
@@ -175,10 +174,8 @@ foreach ($WorkingDisk in $WorkingDisks) {
     if ($z -eq 13) {
         # Skip 13  :p  https://en.wikipedia.org/wiki/Triskaidekaphobia
         $z++
-        Write-Host "Calling PrepareDrive Function with $WorkingDisk and $z"
         PrepareDrive $WorkingDisk $z
     } else {
-        Write-Host "Calling PrepareDrive Function with $WorkingDisk and $z"
         PrepareDrive $WorkingDisk $z
         $z++
     }
