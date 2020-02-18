@@ -1,12 +1,12 @@
 # Number of physical disks
-$DBDrives = 14  # Number not in quotes
+$DBDrives = $null  # Number not in quotes
 # Physical disk size to target (Get by using Get-Disk and looking for the size property)
-$DiskSize = 9796283531264  # Number not in quotes - e.g. Get-Disk -Number 4 | ft AllocatedSize
+$DiskSize = $null  # Number not in quotes - e.g. Get-Disk -Number 4 | ft AllocatedSize
 # Mount point directories used by the DAG - Make sure to add the trailing backslash \
 $ExDB = "C:\ExchangeDatabases\"  # String in quotes
 $ExVol = "C:\ExchangeVolumes\"  # String in quotes
 # Regional Database Prefix
-$DBPrefix = "US"  # String in quotes
+$DBPrefix = "XX"  # String in quotes
 # Number of Databases
 $NumDBs = 48  # Number not in quotes
 # DBs per Volume
