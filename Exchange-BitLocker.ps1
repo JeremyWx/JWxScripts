@@ -1,4 +1,4 @@
-# This will encrypt all remaining drives on the Exchange server after you have encrypted tthe boot volume
+# This will encrypt all remaining drives on the Exchange server after you have encrypted the boot volume
 # This script assumes you have applied group policy that will enforce the various BitLocker options you
 # want enabled on each drive.
 
